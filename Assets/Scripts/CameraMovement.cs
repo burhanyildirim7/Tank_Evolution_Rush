@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class CameraMovement : MonoBehaviour
 {
-    
+
     private GameObject Player;
 
     Vector3 aradakiFark;
@@ -12,12 +12,12 @@ public class CameraMovement : MonoBehaviour
 
     void Start()
     {
-        Player = GameObject.FindGameObjectWithTag("Player");
+        Player = GameObject.FindGameObjectWithTag("KarakterPaketi");
         aradakiFark = transform.position - Player.transform.position;
     }
 
 
-    void Update()
+    void FixedUpdate()
     {
 
         transform.position = Vector3.Lerp(transform.position, new Vector3(Player.transform.position.x, Player.transform.position.y + aradakiFark.y, Player.transform.position.z + aradakiFark.z), Time.deltaTime * 5f);
