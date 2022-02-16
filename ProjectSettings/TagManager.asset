@@ -11,6 +11,8 @@ TagManager:
   - finish
   - collectible
   - elmas
+  - PozitifKapi
+  - NegatifKapi
   layers:
   - Default
   - TransparentFX
