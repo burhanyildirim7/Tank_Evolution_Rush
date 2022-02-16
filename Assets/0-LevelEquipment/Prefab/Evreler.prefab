@@ -5434,6 +5434,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8383633552366091384}
+  - component: {fileID: 2059147129073632395}
   m_Layer: 0
   m_Name: Evreler
   m_TagString: Untagged
@@ -5462,6 +5463,24 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2059147129073632395
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8383633552366091385}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a5d973819c204beea817d8c6e7231d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _birinciEvre: {fileID: 8383633552728646807}
+  _ikinciEvre: {fileID: 8383633553413464070}
+  _ucuncuEvre: {fileID: 8383633553001831008}
+  _dorduncuEvre: {fileID: 8383633552907733631}
+  _besinciEvre: {fileID: 8383633553299457140}
+  _altinciEvre: {fileID: 8383633552540334304}
 --- !u!1 &8383633552376672888
 GameObject:
   m_ObjectHideFlags: 0

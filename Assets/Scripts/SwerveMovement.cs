@@ -21,6 +21,17 @@ public class SwerveMovement : MonoBehaviour
 
     private void Update()
     {
+
+        if (PlayerController.instance._tankSayisi < 2)
+        {
+            _radius = 3.5f;
+        }
+        else
+        {
+            _radius = 2f;
+        }
+
+
         if (GameController.instance.isContinue == true)
         {
             centerPosition = _getPoint.transform.position;
@@ -40,6 +51,6 @@ public class SwerveMovement : MonoBehaviour
                 transform.position = centerPosition + fromOriginToObject;
             }
         }
-       
+
     }
 }

@@ -27,8 +27,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5561649039193504899}
   m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: -4, y: 0, z: 120}
-  m_LocalScale: {x: 0.5, y: 125, z: 0.5}
+  m_LocalPosition: {x: -4, y: 0, z: 115}
+  m_LocalScale: {x: 0.5, y: 130, z: 0.5}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8441224114801763122}
@@ -274,8 +274,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8917609231585547918}
   m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 4, y: 0, z: 120}
-  m_LocalScale: {x: 0.5, y: 125, z: 0.5}
+  m_LocalPosition: {x: 4, y: 0, z: 115}
+  m_LocalScale: {x: 0.5, y: 130, z: 0.5}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8441224114801763122}
@@ -396,6 +396,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5737179015449637059, guid: 2cdceaadaabf7d34a9c729de8317abeb, type: 3}
+      propertyPath: _kapiDegeri
+      value: 350
+      objectReference: {fileID: 0}
     - target: {fileID: 8912359648269653968, guid: 2cdceaadaabf7d34a9c729de8317abeb, type: 3}
       propertyPath: m_Name
       value: BlueDoor (3)
@@ -469,6 +473,10 @@ PrefabInstance:
       value: '-200
 
         YEARS'
+      objectReference: {fileID: 0}
+    - target: {fileID: 6349883443522781928, guid: e3739d79efb207e409346df79dcc5131, type: 3}
+      propertyPath: _kapiDegeri
+      value: 200
       objectReference: {fileID: 0}
     - target: {fileID: 7985029686802470606, guid: e3739d79efb207e409346df79dcc5131, type: 3}
       propertyPath: m_Name
@@ -563,6 +571,10 @@ PrefabInstance:
 
         YEARS'
       objectReference: {fileID: 0}
+    - target: {fileID: 6349883443522781928, guid: e3739d79efb207e409346df79dcc5131, type: 3}
+      propertyPath: _kapiDegeri
+      value: 200
+      objectReference: {fileID: 0}
     - target: {fileID: 7985029686802470606, guid: e3739d79efb207e409346df79dcc5131, type: 3}
       propertyPath: m_Name
       value: RedDoor (1)
@@ -630,6 +642,10 @@ PrefabInstance:
       value: '-200
 
         YEARS'
+      objectReference: {fileID: 0}
+    - target: {fileID: 6349883443522781928, guid: e3739d79efb207e409346df79dcc5131, type: 3}
+      propertyPath: _kapiDegeri
+      value: 200
       objectReference: {fileID: 0}
     - target: {fileID: 7985029686802470606, guid: e3739d79efb207e409346df79dcc5131, type: 3}
       propertyPath: m_Name
@@ -1009,6 +1025,10 @@ PrefabInstance:
 
         YEARS'
       objectReference: {fileID: 0}
+    - target: {fileID: 6349883443522781928, guid: e3739d79efb207e409346df79dcc5131, type: 3}
+      propertyPath: _kapiDegeri
+      value: 100
+      objectReference: {fileID: 0}
     - target: {fileID: 7985029686802470606, guid: e3739d79efb207e409346df79dcc5131, type: 3}
       propertyPath: m_Name
       value: RedDoor
@@ -1164,6 +1184,10 @@ PrefabInstance:
 
         YEARS'
       objectReference: {fileID: 0}
+    - target: {fileID: 6349883443522781928, guid: e3739d79efb207e409346df79dcc5131, type: 3}
+      propertyPath: _kapiDegeri
+      value: 200
+      objectReference: {fileID: 0}
     - target: {fileID: 7985029686802470606, guid: e3739d79efb207e409346df79dcc5131, type: 3}
       propertyPath: m_Name
       value: RedDoor (3)
@@ -1225,6 +1249,10 @@ PrefabInstance:
     - target: {fileID: 5113781072960866898, guid: 2cdceaadaabf7d34a9c729de8317abeb, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5737179015449637059, guid: 2cdceaadaabf7d34a9c729de8317abeb, type: 3}
+      propertyPath: _kapiDegeri
+      value: 250
       objectReference: {fileID: 0}
     - target: {fileID: 8912359648269653968, guid: 2cdceaadaabf7d34a9c729de8317abeb, type: 3}
       propertyPath: m_Name
@@ -1318,6 +1346,10 @@ PrefabInstance:
     - target: {fileID: 5113781072960866898, guid: 2cdceaadaabf7d34a9c729de8317abeb, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5737179015449637059, guid: 2cdceaadaabf7d34a9c729de8317abeb, type: 3}
+      propertyPath: _kapiDegeri
+      value: 350
       objectReference: {fileID: 0}
     - target: {fileID: 8912359648269653968, guid: 2cdceaadaabf7d34a9c729de8317abeb, type: 3}
       propertyPath: m_Name
@@ -1448,6 +1480,10 @@ PrefabInstance:
     - target: {fileID: 5113781072960866898, guid: 2cdceaadaabf7d34a9c729de8317abeb, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5737179015449637059, guid: 2cdceaadaabf7d34a9c729de8317abeb, type: 3}
+      propertyPath: _kapiDegeri
+      value: 250
       objectReference: {fileID: 0}
     - target: {fileID: 8912359648269653968, guid: 2cdceaadaabf7d34a9c729de8317abeb, type: 3}
       propertyPath: m_Name
@@ -1615,7 +1651,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7349195566827505709, guid: 4e73a0bc81c844e83ba3b8d6381d8a7a, type: 3}
       propertyPath: m_LocalScale.z
-      value: 250
+      value: 260
       objectReference: {fileID: 0}
     - target: {fileID: 7349195566827505709, guid: 4e73a0bc81c844e83ba3b8d6381d8a7a, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1627,7 +1663,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7349195566827505709, guid: 4e73a0bc81c844e83ba3b8d6381d8a7a, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 120
+      value: 115
       objectReference: {fileID: 0}
     - target: {fileID: 7349195566827505709, guid: 4e73a0bc81c844e83ba3b8d6381d8a7a, type: 3}
       propertyPath: m_LocalRotation.w

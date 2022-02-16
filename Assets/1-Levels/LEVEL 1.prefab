@@ -27,8 +27,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3485382504668963239}
   m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 4, y: 0, z: 120}
-  m_LocalScale: {x: 0.5, y: 125, z: 0.5}
+  m_LocalPosition: {x: 4, y: 0, z: 115}
+  m_LocalScale: {x: 0.5, y: 130, z: 0.5}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 5471756167497446587}
@@ -275,8 +275,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8484703435554445012}
   m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: -4, y: 0, z: 120}
-  m_LocalScale: {x: 0.5, y: 125, z: 0.5}
+  m_LocalPosition: {x: -4, y: 0, z: 115}
+  m_LocalScale: {x: 0.5, y: 130, z: 0.5}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 5471756167497446587}
@@ -402,6 +402,10 @@ PrefabInstance:
       value: '-100
 
         YEARS'
+      objectReference: {fileID: 0}
+    - target: {fileID: 6349883443522781928, guid: e3739d79efb207e409346df79dcc5131, type: 3}
+      propertyPath: _kapiDegeri
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 7985029686802470606, guid: e3739d79efb207e409346df79dcc5131, type: 3}
       propertyPath: m_Name
@@ -595,6 +599,10 @@ PrefabInstance:
 
         YEARS'
       objectReference: {fileID: 0}
+    - target: {fileID: 6349883443522781928, guid: e3739d79efb207e409346df79dcc5131, type: 3}
+      propertyPath: _kapiDegeri
+      value: 100
+      objectReference: {fileID: 0}
     - target: {fileID: 7985029686802470606, guid: e3739d79efb207e409346df79dcc5131, type: 3}
       propertyPath: m_Name
       value: RedDoor
@@ -638,6 +646,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5471756167677560391}
     m_Modifications:
+    - target: {fileID: 1020159263357574457, guid: 40f813f3ef4ca0e429c54d551fdd426a, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1324899403702306667, guid: 40f813f3ef4ca0e429c54d551fdd426a, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1813585733666691146, guid: 40f813f3ef4ca0e429c54d551fdd426a, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3314509799474343480, guid: 40f813f3ef4ca0e429c54d551fdd426a, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6542800076285808012, guid: 40f813f3ef4ca0e429c54d551fdd426a, type: 3}
       propertyPath: m_RootOrder
       value: 8
@@ -686,6 +710,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tanklar (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 8924600329466004127, guid: 40f813f3ef4ca0e429c54d551fdd426a, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 40f813f3ef4ca0e429c54d551fdd426a, type: 3}
 --- !u!4 &5204756602409129579 stripped
@@ -700,6 +728,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5471756167677560391}
     m_Modifications:
+    - target: {fileID: 1020159263357574457, guid: 40f813f3ef4ca0e429c54d551fdd426a, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1324899403702306667, guid: 40f813f3ef4ca0e429c54d551fdd426a, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1813585733666691146, guid: 40f813f3ef4ca0e429c54d551fdd426a, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3314509799474343480, guid: 40f813f3ef4ca0e429c54d551fdd426a, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6542800076285808012, guid: 40f813f3ef4ca0e429c54d551fdd426a, type: 3}
       propertyPath: m_RootOrder
       value: 6
@@ -747,6 +791,10 @@ PrefabInstance:
     - target: {fileID: 7823835645251856101, guid: 40f813f3ef4ca0e429c54d551fdd426a, type: 3}
       propertyPath: m_Name
       value: Tanklar (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8924600329466004127, guid: 40f813f3ef4ca0e429c54d551fdd426a, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 40f813f3ef4ca0e429c54d551fdd426a, type: 3}
@@ -936,6 +984,10 @@ PrefabInstance:
 
         YEARS'
       objectReference: {fileID: 0}
+    - target: {fileID: 6349883443522781928, guid: e3739d79efb207e409346df79dcc5131, type: 3}
+      propertyPath: _kapiDegeri
+      value: 150
+      objectReference: {fileID: 0}
     - target: {fileID: 7985029686802470606, guid: e3739d79efb207e409346df79dcc5131, type: 3}
       propertyPath: m_Name
       value: RedDoor (2)
@@ -1004,6 +1056,10 @@ PrefabInstance:
 
         YEARS'
       objectReference: {fileID: 0}
+    - target: {fileID: 6349883443522781928, guid: e3739d79efb207e409346df79dcc5131, type: 3}
+      propertyPath: _kapiDegeri
+      value: 200
+      objectReference: {fileID: 0}
     - target: {fileID: 7985029686802470606, guid: e3739d79efb207e409346df79dcc5131, type: 3}
       propertyPath: m_Name
       value: RedDoor (1)
@@ -1066,6 +1122,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5737179015449637059, guid: 2cdceaadaabf7d34a9c729de8317abeb, type: 3}
+      propertyPath: _kapiDegeri
+      value: 300
+      objectReference: {fileID: 0}
     - target: {fileID: 8912359648269653968, guid: 2cdceaadaabf7d34a9c729de8317abeb, type: 3}
       propertyPath: m_Name
       value: BlueDoor (3)
@@ -1090,6 +1150,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5471756167677560391}
     m_Modifications:
+    - target: {fileID: 1020159263357574457, guid: 40f813f3ef4ca0e429c54d551fdd426a, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1324899403702306667, guid: 40f813f3ef4ca0e429c54d551fdd426a, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1813585733666691146, guid: 40f813f3ef4ca0e429c54d551fdd426a, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3314509799474343480, guid: 40f813f3ef4ca0e429c54d551fdd426a, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6542800076285808012, guid: 40f813f3ef4ca0e429c54d551fdd426a, type: 3}
       propertyPath: m_RootOrder
       value: 5
@@ -1138,6 +1214,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tanklar
       objectReference: {fileID: 0}
+    - target: {fileID: 8924600329466004127, guid: 40f813f3ef4ca0e429c54d551fdd426a, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 40f813f3ef4ca0e429c54d551fdd426a, type: 3}
 --- !u!4 &1846439991677106173 stripped
@@ -1170,7 +1250,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7349195566827505709, guid: 4e73a0bc81c844e83ba3b8d6381d8a7a, type: 3}
       propertyPath: m_LocalScale.z
-      value: 250
+      value: 260
       objectReference: {fileID: 0}
     - target: {fileID: 7349195566827505709, guid: 4e73a0bc81c844e83ba3b8d6381d8a7a, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1182,7 +1262,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7349195566827505709, guid: 4e73a0bc81c844e83ba3b8d6381d8a7a, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 120
+      value: 115
       objectReference: {fileID: 0}
     - target: {fileID: 7349195566827505709, guid: 4e73a0bc81c844e83ba3b8d6381d8a7a, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1230,6 +1310,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5471756167677560391}
     m_Modifications:
+    - target: {fileID: 1020159263357574457, guid: 40f813f3ef4ca0e429c54d551fdd426a, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1324899403702306667, guid: 40f813f3ef4ca0e429c54d551fdd426a, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1813585733666691146, guid: 40f813f3ef4ca0e429c54d551fdd426a, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3314509799474343480, guid: 40f813f3ef4ca0e429c54d551fdd426a, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6542800076285808012, guid: 40f813f3ef4ca0e429c54d551fdd426a, type: 3}
       propertyPath: m_RootOrder
       value: 7
@@ -1277,6 +1373,10 @@ PrefabInstance:
     - target: {fileID: 7823835645251856101, guid: 40f813f3ef4ca0e429c54d551fdd426a, type: 3}
       propertyPath: m_Name
       value: Tanklar (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8924600329466004127, guid: 40f813f3ef4ca0e429c54d551fdd426a, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 40f813f3ef4ca0e429c54d551fdd426a, type: 3}
@@ -1397,6 +1497,10 @@ PrefabInstance:
     - target: {fileID: 5113781072960866898, guid: 2cdceaadaabf7d34a9c729de8317abeb, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5737179015449637059, guid: 2cdceaadaabf7d34a9c729de8317abeb, type: 3}
+      propertyPath: _kapiDegeri
+      value: 250
       objectReference: {fileID: 0}
     - target: {fileID: 8912359648269653968, guid: 2cdceaadaabf7d34a9c729de8317abeb, type: 3}
       propertyPath: m_Name
@@ -1528,6 +1632,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5737179015449637059, guid: 2cdceaadaabf7d34a9c729de8317abeb, type: 3}
+      propertyPath: _kapiDegeri
+      value: 150
+      objectReference: {fileID: 0}
     - target: {fileID: 8912359648269653968, guid: 2cdceaadaabf7d34a9c729de8317abeb, type: 3}
       propertyPath: m_Name
       value: BlueDoor (1)
@@ -1601,6 +1709,10 @@ PrefabInstance:
       value: '-200
 
         YEARS'
+      objectReference: {fileID: 0}
+    - target: {fileID: 6349883443522781928, guid: e3739d79efb207e409346df79dcc5131, type: 3}
+      propertyPath: _kapiDegeri
+      value: 200
       objectReference: {fileID: 0}
     - target: {fileID: 7985029686802470606, guid: e3739d79efb207e409346df79dcc5131, type: 3}
       propertyPath: m_Name
@@ -1695,6 +1807,10 @@ PrefabInstance:
 
         YEARS'
       objectReference: {fileID: 0}
+    - target: {fileID: 6349883443522781928, guid: e3739d79efb207e409346df79dcc5131, type: 3}
+      propertyPath: _kapiDegeri
+      value: 50
+      objectReference: {fileID: 0}
     - target: {fileID: 7985029686802470606, guid: e3739d79efb207e409346df79dcc5131, type: 3}
       propertyPath: m_Name
       value: RedDoor (3)
@@ -1756,6 +1872,10 @@ PrefabInstance:
     - target: {fileID: 5113781072960866898, guid: 2cdceaadaabf7d34a9c729de8317abeb, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5737179015449637059, guid: 2cdceaadaabf7d34a9c729de8317abeb, type: 3}
+      propertyPath: _kapiDegeri
+      value: 200
       objectReference: {fileID: 0}
     - target: {fileID: 8912359648269653968, guid: 2cdceaadaabf7d34a9c729de8317abeb, type: 3}
       propertyPath: m_Name

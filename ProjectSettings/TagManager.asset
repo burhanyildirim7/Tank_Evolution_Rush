@@ -13,6 +13,7 @@ TagManager:
   - elmas
   - PozitifKapi
   - NegatifKapi
+  - TankKapisi
   layers:
   - Default
   - TransparentFX
