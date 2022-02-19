@@ -11,6 +11,8 @@ public class TankScript : MonoBehaviour
 
     [SerializeField] private float _atisHizi;
 
+    [SerializeField] private ParticleSystem _atesEtmeEfekt;
+
     private float _time;
 
     void Start()
@@ -27,6 +29,7 @@ public class TankScript : MonoBehaviour
 
             if (_time > _atisHizi)
             {
+                _atesEtmeEfekt.Play();
                 Instantiate(_bullet, _spawnPoint.transform.position, Quaternion.identity);
                 _time = 0;
             }

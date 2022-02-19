@@ -101,6 +101,7 @@ Transform:
   - {fileID: 5391977780242212519}
   - {fileID: 7392702563757906270}
   - {fileID: 4196219474622318532}
+  - {fileID: 5016535258884508485}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -139,6 +140,7 @@ MonoBehaviour:
   _spawnPoint: {fileID: 7731965609433279232}
   _bullet: {fileID: 4477733649621235622, guid: d41b4da1c1e914d1dab5e3e223f132c5, type: 3}
   _atisHizi: 0.5
+  _atesEtmeEfekt: {fileID: 5016535258869338259}
 --- !u!1 &3213126466069314113
 GameObject:
   m_ObjectHideFlags: 0
@@ -748,3 +750,70 @@ Transform:
   m_Father: {fileID: 2642366793610172816}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &2707403569397664581
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 2193519889818023298}
+    m_Modifications:
+    - target: {fileID: 6921171772152348672, guid: 7ea5088a3575e4c65ba9d732b7efc0a5, type: 3}
+      propertyPath: m_RootOrder
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6921171772152348672, guid: 7ea5088a3575e4c65ba9d732b7efc0a5, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6921171772152348672, guid: 7ea5088a3575e4c65ba9d732b7efc0a5, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6921171772152348672, guid: 7ea5088a3575e4c65ba9d732b7efc0a5, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6921171772152348672, guid: 7ea5088a3575e4c65ba9d732b7efc0a5, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 6921171772152348672, guid: 7ea5088a3575e4c65ba9d732b7efc0a5, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 6921171772152348672, guid: 7ea5088a3575e4c65ba9d732b7efc0a5, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6921171772152348672, guid: 7ea5088a3575e4c65ba9d732b7efc0a5, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6921171772152348672, guid: 7ea5088a3575e4c65ba9d732b7efc0a5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 6921171772152348672, guid: 7ea5088a3575e4c65ba9d732b7efc0a5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6921171772152348672, guid: 7ea5088a3575e4c65ba9d732b7efc0a5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6921171772152513622, guid: 7ea5088a3575e4c65ba9d732b7efc0a5, type: 3}
+      propertyPath: m_Name
+      value: AtesEtmeEfekt
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7ea5088a3575e4c65ba9d732b7efc0a5, type: 3}
+--- !u!198 &5016535258869338259 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 6921171772170804182, guid: 7ea5088a3575e4c65ba9d732b7efc0a5, type: 3}
+  m_PrefabInstance: {fileID: 2707403569397664581}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &5016535258884508485 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6921171772152348672, guid: 7ea5088a3575e4c65ba9d732b7efc0a5, type: 3}
+  m_PrefabInstance: {fileID: 2707403569397664581}
+  m_PrefabAsset: {fileID: 0}
