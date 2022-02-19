@@ -37,6 +37,241 @@ public class PlayerController : MonoBehaviour
         StartingEvents();
     }
 
+
+    private void Update()
+    {
+
+
+        if (_year < 500)
+        {
+            _anaTanklar[1].SetActive(false);
+            _anaTanklar[2].SetActive(false);
+            _anaTanklar[3].SetActive(false);
+            _anaTanklar[4].SetActive(false);
+            _anaTanklar[5].SetActive(false);
+            _anaTanklar[0].SetActive(true);
+
+            if (_tankSayisi >= 2 && _tankSayisi < 4)
+            {
+                _birinciEvreDuzen[0].SetActive(true);
+                _birinciEvreDuzen[1].SetActive(true);
+            }
+            else if (_tankSayisi >= 4)
+            {
+                _birinciEvreDuzen[0].SetActive(true);
+                _birinciEvreDuzen[1].SetActive(true);
+                _birinciEvreDuzen[2].SetActive(true);
+                _birinciEvreDuzen[3].SetActive(true);
+            }
+            else
+            {
+                _birinciEvreDuzen[0].SetActive(false);
+                _birinciEvreDuzen[1].SetActive(false);
+                _birinciEvreDuzen[2].SetActive(false);
+                _birinciEvreDuzen[3].SetActive(false);
+            }
+        }
+        else
+        {
+            _birinciEvreDuzen[0].SetActive(false);
+            _birinciEvreDuzen[1].SetActive(false);
+            _birinciEvreDuzen[2].SetActive(false);
+            _birinciEvreDuzen[3].SetActive(false);
+        }
+
+
+        if (_year >= 500 && _year < 1000)
+        {
+            _anaTanklar[0].SetActive(false);
+            _anaTanklar[2].SetActive(false);
+            _anaTanklar[3].SetActive(false);
+            _anaTanklar[4].SetActive(false);
+            _anaTanklar[5].SetActive(false);
+            _anaTanklar[1].SetActive(true);
+
+            if (_tankSayisi >= 2 && _tankSayisi < 4)
+            {
+                _ikinciEvreDuzen[0].SetActive(true);
+                _ikinciEvreDuzen[1].SetActive(true);
+            }
+            else if (_tankSayisi >= 4)
+            {
+                _ikinciEvreDuzen[0].SetActive(true);
+                _ikinciEvreDuzen[1].SetActive(true);
+                _ikinciEvreDuzen[2].SetActive(true);
+                _ikinciEvreDuzen[3].SetActive(true);
+            }
+            else
+            {
+                _ikinciEvreDuzen[0].SetActive(false);
+                _ikinciEvreDuzen[1].SetActive(false);
+                _ikinciEvreDuzen[2].SetActive(false);
+                _ikinciEvreDuzen[3].SetActive(false);
+            }
+        }
+        else
+        {
+            _ikinciEvreDuzen[0].SetActive(false);
+            _ikinciEvreDuzen[1].SetActive(false);
+            _ikinciEvreDuzen[2].SetActive(false);
+            _ikinciEvreDuzen[3].SetActive(false);
+        }
+
+
+        if (_year >= 1000 && _year < 1500)
+        {
+            _anaTanklar[1].SetActive(false);
+            _anaTanklar[0].SetActive(false);
+            _anaTanklar[3].SetActive(false);
+            _anaTanklar[4].SetActive(false);
+            _anaTanklar[5].SetActive(false);
+            _anaTanklar[2].SetActive(true);
+
+            if (_tankSayisi >= 2 && _tankSayisi < 4)
+            {
+                _ucuncuEvreDuzen[0].SetActive(true);
+                _ucuncuEvreDuzen[1].SetActive(true);
+            }
+            else if (_tankSayisi >= 4)
+            {
+                _ucuncuEvreDuzen[0].SetActive(true);
+                _ucuncuEvreDuzen[1].SetActive(true);
+                _ucuncuEvreDuzen[2].SetActive(true);
+                _ucuncuEvreDuzen[3].SetActive(true);
+            }
+            else
+            {
+                _ucuncuEvreDuzen[0].SetActive(false);
+                _ucuncuEvreDuzen[1].SetActive(false);
+                _ucuncuEvreDuzen[2].SetActive(false);
+                _ucuncuEvreDuzen[3].SetActive(false);
+            }
+        }
+        else
+        {
+            _ucuncuEvreDuzen[0].SetActive(false);
+            _ucuncuEvreDuzen[1].SetActive(false);
+            _ucuncuEvreDuzen[2].SetActive(false);
+            _ucuncuEvreDuzen[3].SetActive(false);
+        }
+
+
+        if (_year >= 1500 && _year < 2000)
+        {
+            _anaTanklar[1].SetActive(false);
+            _anaTanklar[2].SetActive(false);
+            _anaTanklar[0].SetActive(false);
+            _anaTanklar[4].SetActive(false);
+            _anaTanklar[5].SetActive(false);
+            _anaTanklar[3].SetActive(true);
+
+            if (_tankSayisi >= 2 && _tankSayisi < 4)
+            {
+                _dorduncuEvreDuzen[0].SetActive(true);
+                _dorduncuEvreDuzen[1].SetActive(true);
+            }
+            else if (_tankSayisi >= 4)
+            {
+                _dorduncuEvreDuzen[0].SetActive(true);
+                _dorduncuEvreDuzen[1].SetActive(true);
+                _dorduncuEvreDuzen[2].SetActive(true);
+                _dorduncuEvreDuzen[3].SetActive(true);
+            }
+            else
+            {
+                _dorduncuEvreDuzen[0].SetActive(false);
+                _dorduncuEvreDuzen[1].SetActive(false);
+                _dorduncuEvreDuzen[2].SetActive(false);
+                _dorduncuEvreDuzen[3].SetActive(false);
+            }
+        }
+        else
+        {
+            _dorduncuEvreDuzen[0].SetActive(false);
+            _dorduncuEvreDuzen[1].SetActive(false);
+            _dorduncuEvreDuzen[2].SetActive(false);
+            _dorduncuEvreDuzen[3].SetActive(false);
+        }
+
+
+        if (_year >= 2000 && _year < 2500)
+        {
+            _anaTanklar[1].SetActive(false);
+            _anaTanklar[2].SetActive(false);
+            _anaTanklar[3].SetActive(false);
+            _anaTanklar[0].SetActive(false);
+            _anaTanklar[5].SetActive(false);
+            _anaTanklar[4].SetActive(true);
+
+            if (_tankSayisi >= 2 && _tankSayisi < 4)
+            {
+                _besinciEvreDuzen[0].SetActive(true);
+                _besinciEvreDuzen[1].SetActive(true);
+            }
+            else if (_tankSayisi >= 4)
+            {
+                _besinciEvreDuzen[0].SetActive(true);
+                _besinciEvreDuzen[1].SetActive(true);
+                _besinciEvreDuzen[2].SetActive(true);
+                _besinciEvreDuzen[3].SetActive(true);
+            }
+            else
+            {
+                _besinciEvreDuzen[0].SetActive(false);
+                _besinciEvreDuzen[1].SetActive(false);
+                _besinciEvreDuzen[2].SetActive(false);
+                _besinciEvreDuzen[3].SetActive(false);
+            }
+        }
+        else
+        {
+            _besinciEvreDuzen[0].SetActive(false);
+            _besinciEvreDuzen[1].SetActive(false);
+            _besinciEvreDuzen[2].SetActive(false);
+            _besinciEvreDuzen[3].SetActive(false);
+        }
+
+
+        if (_year >= 2500)
+        {
+            _anaTanklar[1].SetActive(false);
+            _anaTanklar[2].SetActive(false);
+            _anaTanklar[3].SetActive(false);
+            _anaTanklar[4].SetActive(false);
+            _anaTanklar[0].SetActive(false);
+            _anaTanklar[5].SetActive(true);
+
+            if (_tankSayisi >= 2 && _tankSayisi < 4)
+            {
+                _altinciEvreDuzen[0].SetActive(true);
+                _altinciEvreDuzen[1].SetActive(true);
+            }
+            else if (_tankSayisi >= 4)
+            {
+                _altinciEvreDuzen[0].SetActive(true);
+                _altinciEvreDuzen[1].SetActive(true);
+                _altinciEvreDuzen[2].SetActive(true);
+                _altinciEvreDuzen[3].SetActive(true);
+            }
+            else
+            {
+                _altinciEvreDuzen[0].SetActive(false);
+                _altinciEvreDuzen[1].SetActive(false);
+                _altinciEvreDuzen[2].SetActive(false);
+                _altinciEvreDuzen[3].SetActive(false);
+            }
+        }
+        else
+        {
+            _altinciEvreDuzen[0].SetActive(false);
+            _altinciEvreDuzen[1].SetActive(false);
+            _altinciEvreDuzen[2].SetActive(false);
+            _altinciEvreDuzen[3].SetActive(false);
+        }
+
+
+    }
+
     /// <summary>
     /// Playerin collider olaylari.. collectible, engel veya finish noktasi icin. Burasi artirilabilir.
     /// elmas icin veya baska herhangi etkilesimler icin tag ekleyerek kontrol dongusune eklenir.
@@ -120,7 +355,18 @@ public class PlayerController : MonoBehaviour
         _tankSayisi = 1;
         _year = 0;
         _yearText.text = _year.ToString();
+        StartTankAyarla();
 
+    }
+
+    private void StartTankAyarla()
+    {
+        _anaTanklar[1].SetActive(false);
+        _anaTanklar[2].SetActive(false);
+        _anaTanklar[3].SetActive(false);
+        _anaTanklar[4].SetActive(false);
+        _anaTanklar[5].SetActive(false);
+        _anaTanklar[0].SetActive(true);
     }
 
 }
