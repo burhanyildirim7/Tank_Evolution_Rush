@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.54170084, g: 0.7801473, b: 0.87644327, a: 1}
+  m_IndirectSpecularColor: {r: 0.54169095, g: 0.7801433, b: 0.8764337, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -772,6 +772,16 @@ MonoBehaviour:
   collectibleDegeri: 10
   xVarMi: 1
   collectibleVarMi: 1
+  _yearText: {fileID: 0}
+  _anaTanklar: []
+  _birinciEvreDuzen: []
+  _ikinciEvreDuzen: []
+  _ucuncuEvreDuzen: []
+  _dorduncuEvreDuzen: []
+  _besinciEvreDuzen: []
+  _altinciEvreDuzen: []
+  _year: 0
+  _tankSayisi: 0
 --- !u!54 &1443049515
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -845,7 +855,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5471756167269764209, guid: ad10ad2db1c314875b71ddf462e4f374, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ad10ad2db1c314875b71ddf462e4f374, type: 3}
