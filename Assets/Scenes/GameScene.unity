@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.4770398, g: 0.79908794, b: 0.8987446, a: 1}
+  m_IndirectSpecularColor: {r: 0.4788496, g: 0.80017924, b: 0.8994595, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1226,7 +1226,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5471756167269764209, guid: ad10ad2db1c314875b71ddf462e4f374, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ad10ad2db1c314875b71ddf462e4f374, type: 3}
@@ -3600,7 +3600,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1529853999038803768, guid: 67f8c4b558257465f8f337876b3251d7, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2193519889818023298, guid: 67f8c4b558257465f8f337876b3251d7, type: 3}
       propertyPath: m_RootOrder
@@ -7033,6 +7033,30 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1443049508}
     m_Modifications:
+    - target: {fileID: 6572622440243483971, guid: 722bbead7e5c14965afa282664ff9fbd, type: 3}
+      propertyPath: m_Type
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6572622440243483971, guid: 722bbead7e5c14965afa282664ff9fbd, type: 3}
+      propertyPath: m_Range
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 6572622440243483971, guid: 722bbead7e5c14965afa282664ff9fbd, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6572622440243483971, guid: 722bbead7e5c14965afa282664ff9fbd, type: 3}
+      propertyPath: m_Color.g
+      value: 0.9894495
+      objectReference: {fileID: 0}
+    - target: {fileID: 6572622440243483971, guid: 722bbead7e5c14965afa282664ff9fbd, type: 3}
+      propertyPath: m_Color.r
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6572622440243483971, guid: 722bbead7e5c14965afa282664ff9fbd, type: 3}
+      propertyPath: m_SpotAngle
+      value: 110
+      objectReference: {fileID: 0}
     - target: {fileID: 8317335644816618177, guid: 722bbead7e5c14965afa282664ff9fbd, type: 3}
       propertyPath: m_RootOrder
       value: 6
@@ -7083,7 +7107,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8657831767992789115, guid: 722bbead7e5c14965afa282664ff9fbd, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 722bbead7e5c14965afa282664ff9fbd, type: 3}
