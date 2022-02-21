@@ -32,7 +32,7 @@ public class SwerveMovement : MonoBehaviour
         }
 
 
-        if (GameController.instance.isContinue == true)
+        if (GameController.instance.isContinue == true && GameController.instance.isFinish == false)
         {
             centerPosition = _getPoint.transform.position;
 

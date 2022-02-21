@@ -25,6 +25,10 @@ public class PlayerController : MonoBehaviour
 
     public int _tankSayisi;
 
+    private float _yearFinish;
+
+    private int _deger;
+
 
     private void Awake()
     {
@@ -269,6 +273,20 @@ public class PlayerController : MonoBehaviour
             _altinciEvreDuzen[3].SetActive(false);
         }
 
+        /*
+
+        if (GameController.instance.isFinish == true && _year != 0)
+        {
+
+            _yearFinish -= Time.deltaTime;
+            _year = (int)_yearFinish;
+            _yearText.text = _year.ToString();
+        }
+        else
+        {
+
+        }
+        */
 
     }
 
@@ -294,8 +312,8 @@ public class PlayerController : MonoBehaviour
             {
                 // FAİL EVENTLERİ BURAYA YAZILACAK..
                 GameController.instance.isContinue = false; // çarptığı anda oyuncunun yerinde durması ilerlememesi için
-                UIController.instance.ActivateLooseScreen(); // Bu fonksiyon direk çağrılada bilir veya herhangi bir effect veya animasyon bitiminde de çağrılabilir..
-                                                             // oyuncu fail durumunda bu fonksiyon çağrılacak.. 
+                Invoke("LoseBaslat", 2f); // Bu fonksiyon direk çağrılada bilir veya herhangi bir effect veya animasyon bitiminde de çağrılabilir..
+                                          // oyuncu fail durumunda bu fonksiyon çağrılacak.. 
             }
 
 
@@ -303,16 +321,28 @@ public class PlayerController : MonoBehaviour
         else if (other.CompareTag("PozitifKapi"))
         {
 
-            _year += other.gameObject.GetComponent<KapiScript>()._kapiDegeri;
-            _yearText.text = _year.ToString();
+            //_year += other.gameObject.GetComponent<KapiScript>()._kapiDegeri;
+            //_yearText.text = _year.ToString();
+
+            _deger = 0;
+            _deger = _year + other.gameObject.GetComponent<KapiScript>()._kapiDegeri;
+
+            GameController.instance.SetScore(collectibleDegeri);
+
+            StartCoroutine(YearArtmaSayac());
 
 
         }
         else if (other.CompareTag("NegatifKapi"))
         {
 
-            _year -= other.gameObject.GetComponent<KapiScript>()._kapiDegeri;
-            _yearText.text = _year.ToString();
+            //_year -= other.gameObject.GetComponent<KapiScript>()._kapiDegeri;
+            //_yearText.text = _year.ToString();
+
+            _deger = 0;
+            _deger = _year - other.gameObject.GetComponent<KapiScript>()._kapiDegeri;
+
+            StartCoroutine(YearAzalmaSayac());
 
 
         }
@@ -327,15 +357,208 @@ public class PlayerController : MonoBehaviour
         {
             // finishe collider eklenecek levellerde...
             // FINISH NOKTASINA GELINCE YAPILACAKLAR... Totalscore artırma, x işlemleri, efektler v.s. v.s.
-            GameController.instance.isContinue = false;
-            GameController.instance.ScoreCarp(3);  // Bu fonksiyon normalde x ler hesaplandıktan sonra çağrılacak. Parametre olarak x i alıyor. 
+
+            GameController.instance.isFinish = true;
+            transform.localPosition = new Vector3(0, 0, 0);
+            StartCoroutine(FinishYearSayac());
+            //_yearFinish = _year;
+            //GameController.instance.ScoreCarp(3);  // Bu fonksiyon normalde x ler hesaplandıktan sonra çağrılacak. Parametre olarak x i alıyor. 
             // x değerine göre oyuncunun total scoreunu hesaplıyor.. x li olmayan oyunlarda parametre olarak 1 gönderilecek.
-            UIController.instance.ActivateWinScreen(); // finish noktasına gelebildiyse her türlü win screen aktif edilecek.. ama burada değil..
-                                                       // normal de bu kodu x ler hesaplandıktan sonra çağıracağız. Ve bu kod çağrıldığında da kazanılan puanlar animasyonlu şekilde artacak..
+            //UIController.instance.ActivateWinScreen(); // finish noktasına gelebildiyse her türlü win screen aktif edilecek.. ama burada değil..
+            // normal de bu kodu x ler hesaplandıktan sonra çağıracağız. Ve bu kod çağrıldığında da kazanılan puanlar animasyonlu şekilde artacak..
+
+
+        }
+        else if (other.CompareTag("X1"))
+        {
+            if (_year == 0)
+            {
+                GameController.instance.isContinue = false;
+                GameController.instance.ScoreCarp(1);
+                Invoke("WinBaslat", 2f);
+            }
+            else
+            {
+
+            }
+
+
+        }
+        else if (other.CompareTag("X2"))
+        {
+            if (_year == 0)
+            {
+                GameController.instance.isContinue = false;
+                GameController.instance.ScoreCarp(2);
+                Invoke("WinBaslat", 2f);
+            }
+            else
+            {
+
+            }
+
+
+        }
+        else if (other.CompareTag("X3"))
+        {
+            if (_year == 0)
+            {
+                GameController.instance.isContinue = false;
+                GameController.instance.ScoreCarp(3);
+                Invoke("WinBaslat", 2f);
+            }
+            else
+            {
+
+            }
+
+
+        }
+        else if (other.CompareTag("X4"))
+        {
+            if (_year == 0)
+            {
+                GameController.instance.isContinue = false;
+                GameController.instance.ScoreCarp(4);
+                Invoke("WinBaslat", 2f);
+            }
+            else
+            {
+
+            }
+
+
+        }
+        else if (other.CompareTag("X5"))
+        {
+            if (_year == 0)
+            {
+                GameController.instance.isContinue = false;
+                GameController.instance.ScoreCarp(5);
+                Invoke("WinBaslat", 2f);
+            }
+            else
+            {
+
+            }
+
+
+        }
+        else if (other.CompareTag("X6"))
+        {
+            if (_year == 0)
+            {
+                GameController.instance.isContinue = false;
+                GameController.instance.ScoreCarp(6);
+                Invoke("WinBaslat", 2f);
+            }
+            else
+            {
+
+            }
+
+
+        }
+        else if (other.CompareTag("X7"))
+        {
+            if (_year == 0)
+            {
+                GameController.instance.isContinue = false;
+                GameController.instance.ScoreCarp(7);
+                Invoke("WinBaslat", 2f);
+            }
+            else
+            {
+
+            }
+
+
+        }
+        else if (other.CompareTag("X8"))
+        {
+            if (_year == 0)
+            {
+                GameController.instance.isContinue = false;
+                GameController.instance.ScoreCarp(8);
+                Invoke("WinBaslat", 2f);
+            }
+            else
+            {
+
+            }
+
+
+        }
+        else if (other.CompareTag("X9"))
+        {
+            if (_year == 0)
+            {
+                GameController.instance.isContinue = false;
+                GameController.instance.ScoreCarp(9);
+                Invoke("WinBaslat", 2f);
+            }
+            else
+            {
+
+            }
+
+
+        }
+        else if (other.CompareTag("X10"))
+        {
+            _year = 0;
+            _yearText.text = _year.ToString();
+            GameController.instance.isContinue = false;
+            GameController.instance.ScoreCarp(10);
+            Invoke("WinBaslat", 2f);
 
 
         }
 
+    }
+
+    private void WinBaslat()
+    {
+        UIController.instance.ActivateWinScreen();
+    }
+
+    private void LoseBaslat()
+    {
+        UIController.instance.ActivateLooseScreen();
+    }
+
+    IEnumerator FinishYearSayac()
+    {
+
+        while (_year != 0)
+        {
+            _year -= 10;
+            _yearText.text = _year.ToString();
+            yield return new WaitForSeconds(.025f);
+        }
+    }
+
+
+    IEnumerator YearArtmaSayac()
+    {
+
+        while (_year != _deger)
+        {
+            _year += 10;
+            _yearText.text = _year.ToString();
+            yield return new WaitForSeconds(.01f);
+        }
+    }
+
+    IEnumerator YearAzalmaSayac()
+    {
+
+        while (_year != _deger)
+        {
+            _year -= 10;
+            _yearText.text = _year.ToString();
+            yield return new WaitForSeconds(.01f);
+        }
     }
 
 
@@ -348,6 +571,7 @@ public class PlayerController : MonoBehaviour
         transform.parent.transform.rotation = Quaternion.Euler(0, 0, 0);
         transform.parent.transform.position = Vector3.zero;
         GameController.instance.isContinue = false;
+        GameController.instance.isFinish = false;
         GameController.instance.score = 0;
         transform.position = new Vector3(0, transform.position.y, 0);
         GetComponent<Collider>().enabled = true;

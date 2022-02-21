@@ -47,6 +47,6 @@ public class EvreHasarScript : MonoBehaviour
     {
         //gameObject.SetActive(false);
 
-        transform.position = new Vector3(0, 2500, 0);
+        transform.parent.transform.position = new Vector3(0, 2500, 0);
     }
 }
