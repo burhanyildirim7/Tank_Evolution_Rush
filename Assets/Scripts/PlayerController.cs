@@ -324,6 +324,8 @@ public class PlayerController : MonoBehaviour
             //_year += other.gameObject.GetComponent<KapiScript>()._kapiDegeri;
             //_yearText.text = _year.ToString();
 
+            MoreMountains.NiceVibrations.MMVibrationManager.Haptic(MoreMountains.NiceVibrations.HapticTypes.MediumImpact);
+
             _deger = 0;
             _deger = _year + other.gameObject.GetComponent<KapiScript>()._kapiDegeri;
 
@@ -339,6 +341,8 @@ public class PlayerController : MonoBehaviour
             //_year -= other.gameObject.GetComponent<KapiScript>()._kapiDegeri;
             //_yearText.text = _year.ToString();
 
+            MoreMountains.NiceVibrations.MMVibrationManager.Haptic(MoreMountains.NiceVibrations.HapticTypes.MediumImpact);
+
             _deger = 0;
             _deger = _year - other.gameObject.GetComponent<KapiScript>()._kapiDegeri;
 
@@ -348,6 +352,8 @@ public class PlayerController : MonoBehaviour
         }
         else if (other.CompareTag("TankKapisi"))
         {
+
+            MoreMountains.NiceVibrations.MMVibrationManager.Haptic(MoreMountains.NiceVibrations.HapticTypes.MediumImpact);
 
             _tankSayisi += 2;
 
@@ -534,7 +540,7 @@ public class PlayerController : MonoBehaviour
         {
             _year -= 10;
             _yearText.text = _year.ToString();
-            yield return new WaitForSeconds(.025f);
+            yield return new WaitForSeconds(.03f);
         }
     }
 

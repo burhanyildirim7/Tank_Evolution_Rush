@@ -1,12 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class EvreHasarScript : MonoBehaviour
 {
 
     [SerializeField] private ParticleSystem _hitParticle;
     [SerializeField] private ParticleSystem _destroyParticle;
+
+    [SerializeField] private Slider _slider;
 
     private int _hitSayisi;
 
@@ -23,7 +26,10 @@ public class EvreHasarScript : MonoBehaviour
 
             if (_hitSayisi > 5)
             {
+
                 _destroyParticle.Play();
+
+                MoreMountains.NiceVibrations.MMVibrationManager.Haptic(MoreMountains.NiceVibrations.HapticTypes.MediumImpact);
 
                 Invoke("ObjeKapat", 0.5f);
             }
@@ -32,6 +38,8 @@ public class EvreHasarScript : MonoBehaviour
                 _hitParticle.Play();
 
                 _hitSayisi++;
+
+                _slider.value = 5 - _hitSayisi;
 
                 Destroy(other.gameObject);
             }
