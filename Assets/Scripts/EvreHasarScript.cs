@@ -26,6 +26,7 @@ public class EvreHasarScript : MonoBehaviour
 
             if (_hitSayisi > 5)
             {
+                gameObject.GetComponent<BoxCollider>().enabled = false;
 
                 _destroyParticle.Play();
 

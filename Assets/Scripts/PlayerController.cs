@@ -312,7 +312,7 @@ public class PlayerController : MonoBehaviour
             {
                 // FAİL EVENTLERİ BURAYA YAZILACAK..
                 GameController.instance.isContinue = false; // çarptığı anda oyuncunun yerinde durması ilerlememesi için
-                Invoke("LoseBaslat", 2f); // Bu fonksiyon direk çağrılada bilir veya herhangi bir effect veya animasyon bitiminde de çağrılabilir..
+                Invoke("LoseBaslat", 1f); // Bu fonksiyon direk çağrılada bilir veya herhangi bir effect veya animasyon bitiminde de çağrılabilir..
                                           // oyuncu fail durumunda bu fonksiyon çağrılacak.. 
             }
 
@@ -343,10 +343,21 @@ public class PlayerController : MonoBehaviour
 
             MoreMountains.NiceVibrations.MMVibrationManager.Haptic(MoreMountains.NiceVibrations.HapticTypes.MediumImpact);
 
+
             _deger = 0;
             _deger = _year - other.gameObject.GetComponent<KapiScript>()._kapiDegeri;
 
-            StartCoroutine(YearAzalmaSayac());
+            if (_deger > 0)
+            {
+                StartCoroutine(YearAzalmaSayac());
+            }
+            else
+            {
+                GameController.instance.isContinue = false;
+                Invoke("LoseBaslat", 1f);
+            }
+
+
 
 
         }
