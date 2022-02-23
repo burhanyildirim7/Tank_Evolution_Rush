@@ -11,12 +11,15 @@ public class EvreHasarScript : MonoBehaviour
 
     [SerializeField] private Slider _slider;
 
+    [SerializeField] private GameObject _kapanacakObje;
+
     private int _hitSayisi;
 
 
     void Start()
     {
         _hitSayisi = 0;
+        _kapanacakObje.SetActive(true);
     }
 
     private void OnTriggerEnter(Collider other)
@@ -24,8 +27,17 @@ public class EvreHasarScript : MonoBehaviour
         if (other.CompareTag("Bullet"))
         {
 
-            if (_hitSayisi > 3)
+            _hitSayisi++;
+
+            _slider.value = 3 - _hitSayisi;
+
+            if (_hitSayisi > 2)
             {
+
+                _kapanacakObje.SetActive(false);
+
+                _slider.gameObject.SetActive(false);
+
                 gameObject.GetComponent<BoxCollider>().enabled = false;
 
                 _destroyParticle.Play();
@@ -37,10 +49,6 @@ public class EvreHasarScript : MonoBehaviour
             else
             {
                 _hitParticle.Play();
-
-                _hitSayisi++;
-
-                _slider.value = 3 - _hitSayisi;
 
                 Destroy(other.gameObject);
             }
