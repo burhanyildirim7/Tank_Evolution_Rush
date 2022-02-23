@@ -24,7 +24,7 @@ public class EvreHasarScript : MonoBehaviour
         if (other.CompareTag("Bullet"))
         {
 
-            if (_hitSayisi > 5)
+            if (_hitSayisi > 3)
             {
                 gameObject.GetComponent<BoxCollider>().enabled = false;
 
@@ -40,7 +40,7 @@ public class EvreHasarScript : MonoBehaviour
 
                 _hitSayisi++;
 
-                _slider.value = 5 - _hitSayisi;
+                _slider.value = 3 - _hitSayisi;
 
                 Destroy(other.gameObject);
             }

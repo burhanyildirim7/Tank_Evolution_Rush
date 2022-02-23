@@ -28,7 +28,7 @@ public class SwerveMovement : MonoBehaviour
         }
         else
         {
-            _radius = 2f;
+            _radius = 2.5f;
         }
 
 

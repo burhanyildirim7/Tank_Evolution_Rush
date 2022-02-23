@@ -378,6 +378,8 @@ public class PlayerController : MonoBehaviour
             GameController.instance.isFinish = true;
             transform.localPosition = new Vector3(0, 0, 0);
             StartCoroutine(FinishYearSayac());
+
+            Time.timeScale = 1.5f;
             //_yearFinish = _year;
             //GameController.instance.ScoreCarp(3);  // Bu fonksiyon normalde x ler hesaplandıktan sonra çağrılacak. Parametre olarak x i alıyor. 
             // x değerine göre oyuncunun total scoreunu hesaplıyor.. x li olmayan oyunlarda parametre olarak 1 gönderilecek.
@@ -392,6 +394,7 @@ public class PlayerController : MonoBehaviour
             {
                 GameController.instance.isContinue = false;
                 GameController.instance.ScoreCarp(1);
+                Time.timeScale = 1;
                 Invoke("WinBaslat", 2f);
             }
             else
@@ -407,6 +410,7 @@ public class PlayerController : MonoBehaviour
             {
                 GameController.instance.isContinue = false;
                 GameController.instance.ScoreCarp(2);
+                Time.timeScale = 1;
                 Invoke("WinBaslat", 2f);
             }
             else
@@ -422,6 +426,7 @@ public class PlayerController : MonoBehaviour
             {
                 GameController.instance.isContinue = false;
                 GameController.instance.ScoreCarp(3);
+                Time.timeScale = 1;
                 Invoke("WinBaslat", 2f);
             }
             else
@@ -437,6 +442,7 @@ public class PlayerController : MonoBehaviour
             {
                 GameController.instance.isContinue = false;
                 GameController.instance.ScoreCarp(4);
+                Time.timeScale = 1;
                 Invoke("WinBaslat", 2f);
             }
             else
@@ -452,6 +458,7 @@ public class PlayerController : MonoBehaviour
             {
                 GameController.instance.isContinue = false;
                 GameController.instance.ScoreCarp(5);
+                Time.timeScale = 1;
                 Invoke("WinBaslat", 2f);
             }
             else
@@ -467,6 +474,7 @@ public class PlayerController : MonoBehaviour
             {
                 GameController.instance.isContinue = false;
                 GameController.instance.ScoreCarp(6);
+                Time.timeScale = 1;
                 Invoke("WinBaslat", 2f);
             }
             else
@@ -482,6 +490,7 @@ public class PlayerController : MonoBehaviour
             {
                 GameController.instance.isContinue = false;
                 GameController.instance.ScoreCarp(7);
+                Time.timeScale = 1;
                 Invoke("WinBaslat", 2f);
             }
             else
@@ -497,6 +506,7 @@ public class PlayerController : MonoBehaviour
             {
                 GameController.instance.isContinue = false;
                 GameController.instance.ScoreCarp(8);
+                Time.timeScale = 1;
                 Invoke("WinBaslat", 2f);
             }
             else
@@ -512,6 +522,7 @@ public class PlayerController : MonoBehaviour
             {
                 GameController.instance.isContinue = false;
                 GameController.instance.ScoreCarp(9);
+                Time.timeScale = 1;
                 Invoke("WinBaslat", 2f);
             }
             else
@@ -527,6 +538,7 @@ public class PlayerController : MonoBehaviour
             _yearText.text = _year.ToString();
             GameController.instance.isContinue = false;
             GameController.instance.ScoreCarp(10);
+            Time.timeScale = 1;
             Invoke("WinBaslat", 2f);
 
 
@@ -551,7 +563,7 @@ public class PlayerController : MonoBehaviour
         {
             _year -= 10;
             _yearText.text = _year.ToString();
-            yield return new WaitForSeconds(.03f);
+            yield return new WaitForSeconds(.01f);
         }
     }
 
